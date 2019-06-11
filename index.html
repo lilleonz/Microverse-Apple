@@ -11,25 +11,44 @@
 <body>
     <nav class="apple-nav">
         <ul class="nav-bar">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li class="nav-apple"><a href="#"><span>Apple</span></a></li>
+            <li class="nav-store"><a href="#"><span>Store</span></a></li>
+            <li class="nav-mac"><span>Mac</span></a></li>
+            <li class="nav-iPod"><span>iPod</span></a></li>
+            <li class="nav-iPhone"><span>iPhone</span></a></li>
+            <li class="nav-iPad"><span>iPad</span></a></li>
+            <li class="nav-iTunes"><span>iTunes</span></a></li>
+            <li class="nav-support"><span>Support</span></a></li>
         </ul>
+        <div class="search">
+            <form action="#" method="get" class="search">
+                <div class="search-label">
+                    <label for="searchText">Search</label>
+                    <input type="text" class="searchText">
+                    <div class="reset"></div>
+                    <div class="spinnerHide"></div>
+                </div>
+                <input type="hidden" class="searchSection" name="sec" value="ipad">
+            </form>
+            <div id="magnify">
+                <div class="magnifySearchMode"></div>
+                <div class="magnify"></div>
+            </div>
+            <div id="results"></div>
+        </div>
     </nav>
-    <article>
-        <hero class="verse">
-            <header class="header">
-                <h1 class="title"><a href="#">What will your verse be?</a></h1>
-                <h2 class="subhead"><a href="#">Everyone has something to share. See how people are using iPad in thier unique ways to add to the world's story.</a></h2>
-                <div class="center"><a href="#">Watch the "Your Verse" film and explore the stories <i class="far fa-play-circle"></i></a></div>
-            </header>
-        </hero>
-    </article>
+    <main class="main">
+        <header class="header billboard">
+            <hero class="verse">
+                <a href="#">
+                    <div class="row center">
+                        <h1 class="title"><a href="#">What will your verse be?</a></h1>
+                        <h2 class="subhead"><a href="#">Everyone has something to share. See how people are using iPad in their unique ways to add to the world's story.</a></h2>
+                        <div class="center"><a href="#">Watch the "Your Verse" film and explore the stories <i class="far fa-play-circle"></i></a></div>
+                    </div>
+                </a> 
+            </hero>
+        </header>
     <aside class="promos">
         <ul>
             <li></li>
@@ -38,6 +57,7 @@
             <li></li>
         </ul>
     </aside>
+</main>
     <footer class="home-footer">
         <div class="wrapper">
 

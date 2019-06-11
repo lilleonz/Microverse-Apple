@@ -46,3 +46,101 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Main Css */
+body {
+    display: block;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    min-width: 1024px;
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    background-color: transparent;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    width: 100%;
+    position: relative;
+    top: -72px;
+    overflow: hidden;
+    margin-bottom: -72px;
+    font-size: 1.333em;
+    line-height: 1.85;
+}
+
+div {
+    display: block;
+}
+
+.apple-nav {
+    background: 
+        -webkit-gradient(linear, 0 0, 0 100%, 
+        from(rgba(0, 0, 0, .2)), 
+        color-stop(0.05, rgba(0, 0, 0, 0)), 
+        color-stop(0.97, rgba(0, 0, 0, 0)), 
+        to(rgba(0, 0, 0, .45))), 
+        -webkit-gradient(linear, 0 0, 100% 0, 
+        from(rgba(0, 0, 0, .2)), 
+        color-stop(0.002, rgba(0, 0, 0, 0)), 
+        color-stop(0.998, rgba(0, 0, 0, 0)), 
+        to(rgba(0, 0, 0, .2))), 
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC) no-repeat 50% 50%, 
+        -webkit-gradient(linear, 0 100%, 0 0, 
+        from(#666), 
+        color-stop(0.5, #5e5e5e), 
+        color-stop(0.51, #707070), 
+        to(#808080));
+    height: 36px;
+    top: 18px;
+    z-index: 9998;
+    background: url(/img/globalheader.png) repeat-x;
+    position: relative;
+    display: block;
+    width: 980px;
+    margin: 0 auto;
+    text-align: left;
+    border-radius: 4px;
+    box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: block;
+    font-size: 1.333em;
+    line-height: 1.85;
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    background-color: transparent;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+}
+
+.hero {
+    height: 621px;
+}
+
+.billboard {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto 2px;
+}
+
+ul {
+    list-style: none outside;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    text-align: left;
+}
+
+ul:after {
+    content: "";
+    display: none;
+    content: ".";
+    clear: both;
+    visibility: hidden;
+}
