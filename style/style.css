@@ -85,7 +85,7 @@ div {
         color-stop(0.002, rgba(0, 0, 0, 0)), 
         color-stop(0.998, rgba(0, 0, 0, 0)), 
         to(rgba(0, 0, 0, .2))), 
-        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC) no-repeat 50% 50%, 
+        url(/img/appleNavBar.png) no-repeat 50% 50%,
         -webkit-gradient(linear, 0 100%, 0 0, 
         from(#666), 
         color-stop(0.5, #5e5e5e), 
@@ -266,3 +266,63 @@ aside {
     text-align: center;
 }
 
+.homeFooter {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    min-width: 980px;
+    width: 100%;
+    height: 90px;
+    padding: 0;
+    color: #6e6e6e;
+    font-size: .8334em;
+    line-height: 1.2;
+    text-align: center;
+    zoom: 1;
+}
+
+.homeFooter .wrapper {
+    margin: 0 auto;
+    width: 980px;
+    padding: 1em 0 2.6em;
+}
+
+.homeFooter .wrapper::after {
+    content: '.';
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+
+.homeFooter .left {
+    float: left;
+    clear: both;
+    width: 49%;
+    padding-top: 1.5em;
+    text-align: left;
+}
+
+.homeFooter p {
+    display: inline;
+    margin: 0;
+}
+
+.homeFooter .right {
+    float: right;
+    width: 51%;
+    padding-top: 1.5em;
+    text-align: right;
+}
+
+.piped {
+    zoom: 1;
+}
+
+.clear {
+    clear: both;
+}
