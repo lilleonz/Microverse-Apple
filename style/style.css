@@ -71,7 +71,7 @@ body {
         color-stop(0.002, rgba(0, 0, 0, 0)), 
         color-stop(0.998, rgba(0, 0, 0, 0)), 
         to(rgba(0, 0, 0, .2))), 
-        url(/img/appleNavBar.png) no-repeat 50% 50%,
+        url(./img/appleNavBar.png) no-repeat 50% 50%,
         -webkit-gradient(linear, 0 100%, 0 0, 
         from(#666), 
         color-stop(0.5, #5e5e5e), 
@@ -80,7 +80,7 @@ body {
     height: 36px;
     top: 18px;
     z-index: 9998;
-    background: url(/img/globalheader.png) repeat-x;
+    background: url(./img/globalheader.png) repeat-x;
     position: relative;
     display: flex;
     width: 95%;
