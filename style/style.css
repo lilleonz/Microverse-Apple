@@ -176,7 +176,6 @@ a {
 .hero-verse {
     background-color: #5e4e4e;
     height: 500px;
-    width: auto;
     background: url(/img/your_verse_hero.jpg) 50% 100% no-repeat;
 }
 
@@ -253,7 +252,7 @@ h2 {
 }
 
 aside {
-    display: block;
+    display: flex;
 }
 
 .promos {
@@ -273,8 +272,8 @@ aside {
 .promos ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 4%;
-    padding-inline-end: 4%;
+    padding-inline-start: 60px;
+    padding-inline-end: 0;
 }
 
 .promos li {

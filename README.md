@@ -9,7 +9,7 @@ This is a project of the Main HTML/CSS curriculum at [Microverse](https://www.mi
 #### [View in broswer](***Change***)
 
 #### Live ScreenShot of the page
-![ScreenShot](***Change***)
+![ScreenShot](/img/microverseAppleScreen.png)
 
 
 #### Authors
