@@ -6,7 +6,7 @@ This is a project of the Main HTML/CSS curriculum at [Microverse](https://www.mi
 
 #### [Assignment link](https://www.theodinproject.com/courses/html5-and-css3/lessons/building-with-backgrounds-and-gradients?ref=lnav#introduction)
 
-#### [View in broswer]()
+#### [View in broswer](https://rawcdn.githack.com/lilleonz/Microverse-Apple/e104473e81c7f0ab3b409d750abbc5f2bb0cf377/index.html)
 
 #### Live ScreenShot of the page
 ![ScreenShot](/img/microverseAppleScreen.png)
