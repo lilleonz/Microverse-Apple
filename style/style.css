@@ -176,7 +176,7 @@ a {
 .hero-verse {
     background-color: #5e4e4e;
     height: 500px;
-    background: url(/img/your_verse_hero.jpg) 50% 100% no-repeat;
+    background: url(./img/your_verse_hero.jpg) 50% 100% no-repeat;
 }
 
 .article {
