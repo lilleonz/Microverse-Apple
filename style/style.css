@@ -59,6 +59,10 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+main {
+    height: 645px;
+}
+
 .apple-nav {
     background: 
         -webkit-gradient(linear, 0 0, 0 100%, 
@@ -177,17 +181,13 @@ a {
     text-decoration: none;
 }
 
-/* .hero-verse {
+.hero-verse {
     background-color: #5e4e4e;
     position: absolute;
-    top: 0;
-    top: 0;
-    left: 0;
-    right: 0;
     width: 100%;
     height: 652px;
     background: url(../img/your_verse_hero.jpg) 50% 100% no-repeat;
-} */
+}
 
 .article {
     display: block;
@@ -299,9 +299,12 @@ h2 {
 }
 
 footer {
+    box-sizing: border-box;
     display: flex;
+    flex-direction: column; 
     justify-content: center;
     width: 100%;
+    margin-top: 6px;
     margin-bottom: 48px;
 }
 
@@ -318,8 +321,17 @@ footer li:nth-child(n+2) {
 }
 
 .container {
-    max-width: 1440px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
     margin: 0 auto;
+}
+
+.container a {
+    width: 25%;
+    max-width: 360px;
 }
 
 .promos a:nth-child(1) {
@@ -340,11 +352,9 @@ footer li:nth-child(n+2) {
 
 .promos div {
     background-repeat: no-repeat;
-    background-position: bottom;
     background-size: auto;
     margin: 0;
     padding: 0;
-    border: 0.5px solid white;
 }
 
 .promo {
