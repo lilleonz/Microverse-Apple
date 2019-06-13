@@ -135,6 +135,10 @@ nav input {
     padding: 0;
 }
 
+.apple-nav a:hover {
+    background-image: radial-gradient(circle, #242528, #323437, #424346, #525356, #626466);
+}
+
 header {
     display: block;
     font-size: 1.333em;
@@ -173,11 +177,17 @@ a {
     text-decoration: none;
 }
 
-.hero-verse {
+/* .hero-verse {
     background-color: #5e4e4e;
-    height: 500px;
+    position: absolute;
+    top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 652px;
     background: url(../img/your_verse_hero.jpg) 50% 100% no-repeat;
-}
+} */
 
 .article {
     display: block;
@@ -210,6 +220,20 @@ h1 {
     margin-inline-end: 0px;
 }
 
+.title .small {
+    display: block;
+}
+
+.title img {
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img {
+    border: 0;
+}
+
 .title a {
     color: #fff;
 }
@@ -217,6 +241,16 @@ h1 {
 .subhead {
     font-size: 1em;
     margin-bottom: 27px;
+}
+
+.subhead .small {
+    display: block;
+}
+
+.subhead img {
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .subhead a {
@@ -241,7 +275,20 @@ h2 {
 }
 
 .cta a {
-    color: #fff;
+    display: inline-block;
+    margin: 0 18px 25px;
+}
+
+.cta a .medium {
+    display: inline-block;
+}
+
+.cta a .large {
+    display: none;
+}
+
+.cta img:hover {
+    background: url(../img/cta_your_verse_27pt.png);
 }
 
 .center {
@@ -251,56 +298,62 @@ h2 {
     text-align: center;
 }
 
-aside {
-    display: flex;
-}
-
-.promos {
-    display: flex;
-    width: 100%;
-    list-style-type: none;
-}
-
-.promos img {
-    width: 100%;
-}
-
-.promos-li {
-    width: auto;
-}
-
-.promos ul {
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 60px;
-    padding-inline-end: 0;
-}
-
-.promos li {
-    display: inline-flex;
-    text-align: -webkit-match-parent;
-}
-
-.home-footer {
+footer {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-bottom: 48px;
 }
 
-.home-footer li:nth-child(n+2) {
+footer li:nth-child(n+2) {
     border-left: 1px solid #ccc;
     margin-left: .6em;
     padding-left: .6em;
 }
 
-.footer-wrapper {
-    display: flex;
-    flex-direction: column;
-    color: #6e6e6e;
-    font-size: .8334em;
-    line-height: 1.2;
-    margin: 0px auto;
+.promos .container{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 200px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.promos a:nth-child(1) {
+    background-image: url(../img/promo_iphone5s.jpg);
+}
+
+.promos a:nth-child(2) {
+    background-image: url(../img/promo_iphone5c.jpg);
+}
+
+.promos a:nth-child(3) {
+    background-image: url(../img/promo_30_years.jpg);
+}
+
+.promos a:nth-child(4) {
+    background-image: url(../img/promo_supplier_responsibility.jpg);
+}
+
+.promos div {
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    margin: 0;
+    padding: 0;
+    border: 0.5px solid white;
+}
+
+.promo {
+    width: 100%;
+    height: 100%;
+}
+
+.promos img {
+    width: 100%;
 }
 
 .top {
