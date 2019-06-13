@@ -181,7 +181,7 @@ a {
     text-decoration: none;
 }
 
-.hero-verse {
+#hero-verse {
     background-color: #5e4e4e;
     position: absolute;
     width: 100%;
@@ -189,106 +189,48 @@ a {
     background: url(../img/your_verse_hero.jpg) 50% 100% no-repeat;
 }
 
-.article {
-    display: block;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
+#text {
+    box-sizing: border-box;
+    margin: 10% 10%;
+    justify-content: center;
 }
 
-.header {
-    display: block;
+[href="title"]{
+    margin: 60px 0 -20px 0;
 }
 
-.header a{
-    text-decoration: #fff; 
+[href="title"] > div{
+    background-image: url(/img/your_verse_title_small.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    height: 104px;
+    width: 960px;
 }
 
-h1 {
-    display: block;
-    font-size: 2.5em;
-    line-height: 36px;
-    font-weight: bold;
-    color: #fff;
-    font-style: normal;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-end: 0px;
-    margin-inline-end: 0px;
+[href="subhead"]{
+    margin-bottom: 25px;
 }
 
-.title .small {
-    display: block;
+[href="subhead"] > div{
+    background-image: url(../img/your_verse_subhead_small.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    height: 82px;
+    width: 980px;
 }
 
-.title img {
-    display: none;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-img {
-    border: 0;
-}
-
-.title a {
-    color: #fff;
-}
-
-.subhead {
-    font-size: 1em;
-    margin-bottom: 27px;
-}
-
-.subhead .small {
-    display: block;
-}
-
-.subhead img {
-    display: none;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.subhead a {
-    color: #fff;
-}
-
-h2 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-.cta {
-    position: relative;
-    z-index: 10;
-    overflow: hidden;
+[href="cta"] > div{
+    background-image: url(../img/cta_your_verse_27pt.png);
+    background-repeat: no-repeat;
+    background-position: top;
     height: 31px;
+    width: 960px;
 }
 
-.cta a {
-    display: inline-block;
-    margin: 0 18px 25px;
-}
-
-.cta a .medium {
-    display: inline-block;
-}
-
-.cta a .large {
-    display: none;
-}
-
-.cta img:hover {
-    background: url(../img/cta_your_verse_27pt.png);
+[href="cta"] > div:hover{
+    background-position: bottom;
 }
 
 .center {
