@@ -1,0 +1,360 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Main Css */
+body {
+    display: block;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    min-width: 1024px;
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    background-color: transparent;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    height: 645px;
+}
+
+.apple-nav {
+    background: 
+        -webkit-gradient(linear, 0 0, 0 100%, 
+        from(rgba(0, 0, 0, .2)), 
+        color-stop(0.05, rgba(0, 0, 0, 0)), 
+        color-stop(0.97, rgba(0, 0, 0, 0)), 
+        to(rgba(0, 0, 0, .45))), 
+        -webkit-gradient(linear, 0 0, 100% 0, 
+        from(rgba(0, 0, 0, .2)), 
+        color-stop(0.002, rgba(0, 0, 0, 0)), 
+        color-stop(0.998, rgba(0, 0, 0, 0)), 
+        to(rgba(0, 0, 0, .2))), 
+        url(../img/appleNavBar.png) no-repeat 50% 50%,
+        -webkit-gradient(linear, 0 100%, 0 0, 
+        from(#666), 
+        color-stop(0.5, #5e5e5e), 
+        color-stop(0.51, #707070), 
+        to(#808080));
+    height: 36px;
+    top: 18px;
+    z-index: 9998;
+    background: url(../img/globalheader.png) repeat-x;
+    position: relative;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    text-align: left;
+    border-radius: 4px;
+    box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    padding: 0;
+    color: #333;
+    font: #707070;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+}
+
+.apple-nav a {
+    display: block;
+    -webkit-box-flex: 1;
+    flex: 1;
+    color: #fff;
+    border-right: 1px solid #333;
+    padding: 7px;
+    text-align: center;
+}
+
+.apple-nav i {
+    color: #fff;
+    padding: 5px;
+}
+
+.search-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 106px;
+    padding: 8px 13px;
+    background: none;
+    border-width: 0 2px 0 1px;
+    border-radius: 6px;
+    background-color: rgba(255,255,255,.1);
+    z-index: 0;
+}
+
+nav input {
+    display: inline-block;
+    margin: 0 5px;
+    width: 80%;
+    background: inherit;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0;
+}
+
+.apple-nav a:hover {
+    background-image: radial-gradient(circle, #242528, #323437, #424346, #525356, #626466);
+}
+
+header {
+    display: block;
+    font-size: 1.333em;
+    line-height: 1.85;
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    background-color: transparent;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+}
+
+ul {
+    list-style: none outside;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: left;
+}
+
+ul:after {
+    content: "";
+    display: none;
+    content: ".";
+    clear: both;
+    visibility: hidden;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+a:link a:visited a:active {
+    text-decoration: none;
+}
+
+a {
+    color: #06e;
+    text-decoration: none;
+}
+
+#hero-verse {
+    background-color: #5e4e4e;
+    position: absolute;
+    width: 100%;
+    height: 652px;
+    background: url(../img/your_verse_hero.jpg) 50% 100% no-repeat;
+}
+
+#text {
+    box-sizing: border-box;
+    margin: 10% 10%;
+    justify-content: center;
+}
+
+[href="title"]{
+    margin: 60px 0 -20px 0;
+}
+
+[href="title"] > div{
+    background-image: url(/img/your_verse_title_small.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    height: 104px;
+    width: 960px;
+}
+
+[href="subhead"]{
+    margin-bottom: 25px;
+}
+
+[href="subhead"] > div{
+    background-image: url(../img/your_verse_subhead_small.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    height: 82px;
+    width: 980px;
+}
+
+[href="cta"] > div{
+    background-image: url(../img/cta_your_verse_27pt.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 31px;
+    width: 960px;
+}
+
+[href="cta"] > div:hover{
+    background-position: bottom;
+}
+
+.center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+footer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 48px;
+}
+
+footer li:nth-child(n+2) {
+    border-left: 1px solid #ccc;
+    margin-left: .6em;
+    padding-left: .6em;
+}
+
+.promos .container{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 200px;
+}
+
+.container {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container a {
+    width: 25%;
+    max-width: 360px;
+}
+
+.promos a:nth-child(1) {
+    background-image: url(../img/promo_iphone5s.jpg);
+}
+
+.promos a:nth-child(2) {
+    background-image: url(../img/promo_iphone5c.jpg);
+}
+
+.promos a:nth-child(3) {
+    background-image: url(../img/promo_30_years.jpg);
+}
+
+.promos a:nth-child(4) {
+    background-image: url(../img/promo_supplier_responsibility.jpg);
+}
+
+.promos div {
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.promo {
+    width: 100%;
+    height: 100%;
+}
+
+.promos img {
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+}
+
+.top .left {
+    align-self: flex-start;
+    flex-grow: 49;
+    text-align: left;
+    padding-top: 1.5em;
+    height: 1.2em;
+}
+
+.top .right {
+    display: flex;
+    padding-top: 1.5em;
+    flex-grow: 51;
+    text-align: right;
+    margin-left: 48px;
+}
+
+.right .first {
+    flex-direction: row;
+    list-style-type: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.right .worldwide {
+    width: 16px;
+    height: 12px;
+    padding: 0px 8px;
+}
+
+.left {
+    flex-direction: row;
+    list-style-type: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 1.2em;
+    padding-top: 1.5em;
+}
+
+.left .down {
+    display: flex;
+    height: 1.2em;
+}
